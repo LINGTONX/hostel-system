@@ -54,7 +54,7 @@ nav ul  li{
 nav ul li a {
     display: inline-block;
     text-decoration: none;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     color:#fff;
     
 }
@@ -115,20 +115,23 @@ nav h1{
     .contact-info .box{
         border-bottom: 1px solid #001433;
     }
-   
+   .sign-up-card, .signup-container{
+       max-width: 450px; 
+   }
 }
 
 /* --showchase-- */
 .showcase{
     background: url(./img/hmee.jpg) no-repeat center center/cover;
     /* height: 430px; */
+    height: 90vh;
     line-height: 1.5rem;
     text-align: center;
 }
 
 .showcase h1{
     font-size: 2rem;
-    padding-top: 6rem;
+    padding-top: 15rem;
 }
 .showcase h1 span{
    color:#0080ff ; 
@@ -159,6 +162,7 @@ nav h1{
 /* showcase two */
 .showcase2{
     display: flex;
+    height: 30rem;
     
     
 }
@@ -203,6 +207,10 @@ line-height: 1.5rem;
 .services{
     display: flex;
     text-align: center;
+}
+.box{
+    height: 25rem;
+    padding-top: 5rem;
 }
 .ah h2,
 .sm h2,
@@ -250,7 +258,7 @@ footer{
 .abt-img{
     background: url(./img/abt.jpg) no-repeat center center/cover;
     margin: 2rem 1rem 2rem 0rem;
-    height: 200px;
+    /* height: 250px; */
     border-radius: 10px;
 }
 /* clients reviews */
@@ -370,20 +378,24 @@ footer{
 .sign-up-card{
     background:  #f2f2f2;
     color: #000;
-    width: 650px;
+    width: 500px;
     padding: 30px 20px;
-    border-radius: 10px;
-    margin: 100px auto;
-    min-height: 100vh;
+    border-radius: 5px;
+    margin: 3rem auto;
+  
     box-shadow:0 3px 10px rgba(0, 0, 0, 0.4) ;
+    margin-bottom: 25rem;
 }
 
 .sign-up-card h3{
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 30px;
+    text-align: center;
 }
-
+.sign-up-card p{
+    padding: 10px 0 30px 0;
+}
 .input-div{
     display: flex;
     flex-direction: column;
@@ -437,7 +449,6 @@ p a{
 /* sign up section */
 div.wrapper{
     font-family: 'Open Sans', sans-serif;
-    background-color:#ccc;
     min-height:700px;
     height:100vh;
     padding-top:50px;
@@ -445,12 +456,13 @@ div.wrapper{
   }
   .signup-container{
     padding:25px 0;
-    max-width:400px;
+    width:500px;
     margin:0 auto;
-    background-color:white;
-    color: #000000d8;
+    background-color:#f2f2f2;
+    color: #000000;
     border-radius:5px;
     box-shadow:0 3px 10px rgba(0, 0, 0, 0.4) ;
+    
   }
   .signup-container h1{
     text-align:center;
@@ -474,11 +486,13 @@ div.wrapper{
     width:100%;
     border:none;
     outline:none;
+    
   }
   div.group input{
     opacity:1;
     padding:10px 0;
     color:black;
+    padding: 15px 20px;
     border-bottom:1px solid #ccc;
   }
   .signup-container input[type="submit"]{
