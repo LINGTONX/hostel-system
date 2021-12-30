@@ -15,6 +15,9 @@ body{
     max-width: 1100px;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+}
 .btn a{
     text-decoration: none;
     border: 1px solid white;
@@ -24,6 +27,9 @@ body{
 span{
     color:#0080ff ; 
  }
+ ul{
+    list-style: none;
+}
  h1{
     font-size: 2rem;
     padding:1rem;
@@ -114,10 +120,39 @@ nav h1{
     }
     .contact-info .box{
         border-bottom: 1px solid #001433;
+        padding-top: 8rem;
     }
    .sign-up-card, .signup-container{
        max-width: 350px; 
    }
+   .footer-section{
+    flex-direction: column;
+    align-items: center;
+    }
+    .footer-items{
+        margin-top: 2rem;
+    }
+    .footer-items h1{
+        height: 2rem;
+        margin:1rem 3rem 0 3rem ;
+    }
+    .footer-items p{
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .footer-links{
+        justify-content: center;
+        font-size: 30px;
+        gap: 20px;
+        max-width: 70%;
+    }
+    .copy{
+        max-width: 68%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 14px;
+        margin-bottom:3rem ;
+    }
 }
 
 /* --showchase-- */
@@ -227,12 +262,7 @@ line-height: 1.5rem;
     color:  #001433;
 }
 
-footer{
-    text-align: center;
-    padding: 2.5rem 0;
-    background:#0080ff;
-    font-size: 30px;
-}
+
 /* About page */
 
 /* About info */
@@ -370,7 +400,7 @@ footer{
 .contact-info .box{
     background: #3399ff;
     color:  #001433;
-    padding-top: 2rem;
+    padding-top: 7rem;
 }
 
 /* log in section */
@@ -508,4 +538,50 @@ div.wrapper{
     margin:20px 0;
     text-align:center;
   }
+
+  /* footer section */
+footer{
+    text-align: center;
+    padding: 2rem 0;
+    background:#0080ff;
+    font-size: 30px;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    max-width: 80%;
+}
+
+.footer-items p{
+   color: #FFFFFF;
+   font-size: 18px;
+
+}
+.footer-items p{
+   padding-left: 2rem;
+}
+.footer-links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    
+}
+.footer-links a{
+    color: #FFFFFF;
+}
+.foota{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+.copy{
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FAFBFC;
+    padding-top: 1rem;
+}
 
